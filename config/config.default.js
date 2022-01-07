@@ -26,7 +26,6 @@ module.exports = appInfo => {
   const userConfig = {
     // myAppName: 'egg',
   };
-
   config.mysql = {
     // 单数据库信息配置
     client: {
@@ -49,6 +48,7 @@ module.exports = appInfo => {
     // 是否加载到 agent 上，默认关闭
     agent: false,
   };
+  config.uploadDir = 'app/public/avatar/upload';
   return {
     ...config,
     ...userConfig,
