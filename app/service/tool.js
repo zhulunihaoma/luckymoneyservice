@@ -20,7 +20,7 @@ class ToolService extends Service {
         let uploadDir = path.join(dir, date + path.extname(filename));
         return {
             uploadDir,
-            saveDir: this.ctx.origin + uploadDir.slice(3).replace(/\\/g, '/')
+            saveDir: uploadDir.slice(3).replace(/\\/g, '/')
         }
     }
     async echo() {

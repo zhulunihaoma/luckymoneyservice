@@ -7,6 +7,14 @@ module.exports = {
   //   enable: true,
   // }
   // config/plugin.js
+  valparams: {
+    enable : true,
+    package: 'egg-valparams'
+  },
+  validate: {
+    enable: true,
+    package: 'egg-validate',
+  },
   mysql: {
     enable: true,
     package: 'egg-mysql',

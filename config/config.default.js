@@ -22,6 +22,10 @@ module.exports = appInfo => {
       enable: false
     }
   };
+  config.valparams = {
+    locale    : 'zh-cn',
+    throwError: false  // 表示是否开启参数验证
+  };
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',
